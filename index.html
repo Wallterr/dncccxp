@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCXP22</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img width="150px" id="image" src="./CCXP.svg" alt="">
+    </header>
+    <section>
+        <div id="bgLeft">
+            <h1 id="title"> REVIVA O ÉPICO </h1>
+            <h2 id="subTitle"> DE 01 A 04 DE DEZEMBRO </h2>
+            <h3 id="textTitle"> Você consegue sentir? É aquela sensação de<br>
+            finalmente poder falar em voz alta: "estamos<br>
+            em casa". Sim, em dezembro de 2022,<br>
+            teremos a volta da CCXP física. Mas não será<br>
+            qualquer CCXP, vai ser a maior de todos os<br>
+            tempos. Prepare-se para visitar seus<br>
+            universos favoritos, explorar o Artists' Valley,<br>
+            se emocionar nos auditórios e encontrar<br>
+            aventuras épicas a cada passo pelos nossos<br>
+            corredores.</h3>
+        </div>
+        <div>
+            
+        </div>
+        <div id="bgRight">
+            <div class="timer">
+
+                <div>
+                    <h1 id="day">00</h1>
+                </div>
+                <div class="textTimer"> D </div>
+
+                <div>
+                    <h1 id="hour">00</h1> 
+                </div>
+                <div class="textTimer"> H </div>
+
+                <div>
+                    <h1 id="min">00</h1>
+                </div>
+                <div class="textTimer"> M </div>
+
+                <div>
+                    <h1 id="sec">00</h1>
+                </div>
+                <div class="textTimer"> S </div>
+
+            </div>
+            <h1 id="textVideo">PARA A MAIOR CCXP DE TODOS OS TEMPOS</h1>
+            <video width = "800px" controls loop><source src="Arlequina.mp4" type="video/mp4"></video>
+        </div>
+    </section>
+    <h1 id="textFooter">AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h1>
+    <footer>
+        <div>
+            <img class="cards-ingressos" src="ingressoQuinta.svg"
+            onclick="selectCard('#quinta')"
+            onmouseover="highlightCard('#quinta')"
+            onmouseout="highlightCard('#quinta')" id="quinta" alt="">
+
+            <img class="cards-ingressos" src="ingressoSexta.svg"
+            onclick="selectCard('#sexta')"
+            onmouseover="highlightCard('#sexta')"
+            onmouseout="highlightCard('#sexta')" id="sexta" alt="">
+
+            <img class="cards-ingressos" src="ingressoSabado.svg"
+            onclick="selectCard('#sabado')"
+            onmouseover="highlightCard('#sabado')"
+            onmouseout="highlightCard('#sabado')" id="sabado" alt="">
+
+            <img class="cards-ingressos" src="ingressoDomingo.svg"
+            onclick="selectCard('#domingo')"
+            onmouseover="highlightCard('#domingo')"
+            onmouseout="highlightCard('#domingo')" id="domingo" alt="">
+
+        </div>
+        <div>
+            <button onclick="showSelectedCards()" id="button">GARANTA O SEU!</button>
+        </div>       
+        
+    </footer>
+    
+    <div id="formulario">
+        <h2> Cadastre seu e-mail e fique por dentro das novidades!</h2>
+        <form action="https://www.google.com/">
+            <input type="email" placeholder="Seu e-mail" required/>
+            <input id="send" type="submit" >
+         </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
