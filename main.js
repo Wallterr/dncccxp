@@ -1,3 +1,6 @@
+const ingressos = [];
+
+
 function addRedBorder(id)
 {
     element = document.querySelector("#" + id)
@@ -59,9 +62,21 @@ function addKeyboardEventListeners(){
             ingresso4.classList.toggle("card-highlight");
         }
        
-    })
+    },false);
 }
 
+    function selectCard(selector) {
+        var element = document.querySelector(selector);
+        element.classList.toggle("card-selected");
+        if(ingressos.includes(selector)) ingressos.pop(selector);
+        else ingressos.push(selector)
+    }
+
+    function showSelectedCards(){
+        if(ingressos.length > 0) alert("Ingressos Selecionados:" + ingressos)
+    }
+
+ 
 
 addKeyboardEventListeners();
 

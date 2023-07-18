@@ -61,25 +61,41 @@
     <h1 id="textFooter">AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h1>
     <footer>
         <div>
-            <img src="ingressoQuinta.svg"
+            <img
+            class="cards-ingressos"
+            src="ingressoQuinta.svg"
+            onclick="selectCard('#quinta')"
             onmouseover="highlightCard('#quinta')"
-            onmouseout="highlightCard('#quinta')" id="quinta">
+            onmouseout="highlightCard('#quinta')"
+            id="quinta">
 
-            <img src="ingressoSexta.svg" 
+            <img
+            class="cards-ingressos"
+            src="ingressoSexta.svg" 
+            onclick="selectCard('#sexta')"
             onmouseover="highlightCard('#sexta')" 
-            onmouseout="highlightCard('#sexta')" id="sexta">
+            onmouseout="highlightCard('#sexta')"
+            id="sexta">
 
-            <img src="ingressoSabado.svg"
+            <img
+            class="cards-ingressos"
+            src="ingressoSabado.svg"
+            onclick="selectCard('#sabado')"
             onmouseover="highlightCard('#sabado')" 
-            onmouseout="highlightCard('#sabado')" id="sabado">
+            onmouseout="highlightCard('#sabado')"
+            id="sabado">
 
-            <img src="ingressoDomingo.svg"
+            <img
+            class="cards-ingressos"
+            src="ingressoDomingo.svg"
+            onclick="selectCard('#domingo')"
             onmouseover="highlightCard('#domingo')" 
-            onmouseout="highlightCard('#domingo')" id="domingo">
+            onmouseout="highlightCard('#domingo')"
+            id="domingo">
 
         </div>
         <div>
-            <button id="button">GARANTA O SEU!</button>
+            <button onclick="showSelectedCards()" id="button">GARANTA O SEU!</button>
         </div>       
         
     </footer>
