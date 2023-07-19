@@ -3,7 +3,7 @@ const ingressos = [];
 
 function addRedBorder(id)
 {
-    element = document.querySelector("#" + id)
+    element = document.querySelector(`#${id}`)
     element.style.border = "5px solid red";
 }
 
@@ -65,7 +65,7 @@ function addKeyboardEventListeners(){
     },false);
 }
 
-    function selectCard(selector) {
+    selectCard = (selector) => {
         var element = document.querySelector(selector);
         element.classList.toggle("card-selected");
         if(ingressos.includes(selector)) ingressos.pop(selector);
